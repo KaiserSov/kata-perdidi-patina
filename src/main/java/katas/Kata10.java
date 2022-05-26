@@ -55,6 +55,9 @@ public class Kata10 {
     public static List<Map> execute() {
         List<Map> lists = DataUtil.getLists();
         List<Map> videos = DataUtil.getVideos();
+
+        System.out.println(" ");
+        System.out.println(" ");
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");

@@ -19,9 +19,12 @@ public class Kata1 {
         List<Movie> movies = DataUtil.getMovies();
 
         System.out.println(" ");
+        System.out.println(" ");
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");
+
+
         List<Map<Integer, String>> arrayMovies = movies
                 .stream()
                 .map(movie -> Map.of(

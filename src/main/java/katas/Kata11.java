@@ -64,6 +64,9 @@ public class Kata11 {
         List<Map> videos = DataUtil.getVideos();
         List<Map> boxArts = DataUtil.getBoxArts();
         List<Map> bookmarkList = DataUtil.getBookmarkList();
+
+        System.out.println(" ");
+        System.out.println(" ");
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");

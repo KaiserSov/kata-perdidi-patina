@@ -18,9 +18,12 @@ public class Kata3 {
         List<MovieList> movieLists = DataUtil.getMovieLists();
 
         System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");
+
 
         List<Integer> arrayVideosId = movieLists
                 .stream()
