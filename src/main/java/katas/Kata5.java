@@ -21,14 +21,18 @@ public class Kata5 {
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");
-
         System.out.println(" ");
 
-        return movies
+        Double ratingMovies = movies
                 .stream()
                 .map(movie -> movie.getRating())
-                .reduce(Double::max)
-                .get();
+                .reduce((ratingMax, rating) -> {
+                    return ratingMax < rating ? rating : ratingMax;
+                })
+                .orElse(0D);
+
+        System.out.println(ratingMovies);
+        return ratingMovies;
 
         //return 3.0;
     }
