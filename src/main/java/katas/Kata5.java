@@ -22,6 +22,14 @@ public class Kata5 {
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");
 
-        return 3.0;
+        System.out.println(" ");
+
+        return movies
+                .stream()
+                .map(movie -> movie.getRating())
+                .reduce(Double::max)
+                .get();
+
+        //return 3.0;
     }
 }
