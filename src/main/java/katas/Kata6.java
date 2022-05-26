@@ -13,7 +13,25 @@ import java.util.List;
 public class Kata6 {
     public static String execute() {
         List<Movie> movies = DataUtil.getMovies();
+        System.out.println("-------------------------------------");
+        System.out.println("|          MOVIES CORN24            |");
+        System.out.println("-------------------------------------");
 
-        return "someUrl";
+        String moviesUrl = movies
+                .stream()
+                .map(boxart -> boxart.getBoxarts())
+                .flatMap(secondBoxA -> secondBoxA.stream())
+                .reduce((boxArt, boxArt_2) -> boxArt.getWidth() * boxArt
+                        .getHeight() > boxArt_2.getWidth() * boxArt_2
+                        .getHeight() ? boxArt : boxArt_2)
+
+                .map(boxart -> boxart.getUrl())
+                .orElseThrow();
+
+        System.out.println(moviesUrl);
+        return moviesUrl;
     }
+
 }
+
+

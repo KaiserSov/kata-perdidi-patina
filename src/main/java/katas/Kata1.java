@@ -18,6 +18,7 @@ public class Kata1 {
     public static List<Map<Integer, String>> execute() {
         List<Movie> movies = DataUtil.getMovies();
 
+        System.out.println(" ");
         System.out.println("-------------------------------------");
         System.out.println("|          MOVIES CORN24            |");
         System.out.println("-------------------------------------");
