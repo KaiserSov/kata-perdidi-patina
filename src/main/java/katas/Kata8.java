@@ -20,6 +20,9 @@ public class Kata8 {
     public static List<Map> execute() {
         List<Movie> movies = DataUtil.getMovies();
         List<Bookmark> bookMarks = DataUtil.getBookMarks();
+        System.out.println("-------------------------------------");
+        System.out.println("|          MOVIES CORN24            |");
+        System.out.println("-------------------------------------");
 
         // StreamUtils.zip()
 

@@ -62,6 +62,9 @@ public class Kata11 {
         List<Map> videos = DataUtil.getVideos();
         List<Map> boxArts = DataUtil.getBoxArts();
         List<Map> bookmarkList = DataUtil.getBookmarkList();
+        System.out.println("-------------------------------------");
+        System.out.println("|          MOVIES CORN24            |");
+        System.out.println("-------------------------------------");
 
         return ImmutableList.of(ImmutableMap.of("name", "someName", "videos", ImmutableList.of(
                 ImmutableMap.of("id", 5, "title", "The Chamber", "time", 123, "boxart", "someUrl")
